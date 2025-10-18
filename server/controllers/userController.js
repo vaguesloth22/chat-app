@@ -20,7 +20,7 @@ export const signup = async(req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt); 
 
     const newUser = await User.create({
-      fullName, email, password: hashedPassword, bio, profilePic: req.body.profilePic || "",
+      fullName, email, password: hashedPassword, bio, //profilePic: req.body.profilePic || "",
     });
 
     const token = generateToken(newUser._id); 
