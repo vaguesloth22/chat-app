@@ -16,10 +16,7 @@ overflow-hidden h-[100%] grid grid-cols-1 relative ${
             : "md:grid-cols-2"
         }`}
       >
-        <Sidebar
-          selectedUser={selectedUser}
-          setSelectedUser={setSelectedUser}
-        />
+        <Sidebar />
         <ChatContainer
           selectedUser={selectedUser}
           setSelectedUser={setSelectedUser}
